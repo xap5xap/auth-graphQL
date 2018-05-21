@@ -13,7 +13,6 @@ class SignupForm extends Component {
     }
 
     componentWillUpdate(nextProps) {
-        console.log(this.props, nextProps)
         if (!this.props.data.user && nextProps.data.user) {
             //redirect to dashboard
             hashHistory.push('/dashboard');
